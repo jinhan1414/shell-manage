@@ -1,0 +1,2 @@
+-- 提取建立表注释的语句
+select 'COMMENT ON TABLE '||table_name||' IS '''||comments||''';' from user_tab_comments;

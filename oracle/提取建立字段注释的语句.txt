@@ -1,0 +1,2 @@
+-- 提取建立字段注释的语句
+select 'COMMENT ON COLUMN '||table_name|| '.'||column_name||  ' IS '''||comments||''';' from user_col_comments;
